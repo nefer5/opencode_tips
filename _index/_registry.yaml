@@ -15,11 +15,10 @@ contents:
     status: published
     tags: [system-registry, 系统台账, 能力管理, opencode]
 
-# 未来新增内容示例：
-# - id: tip-002
-#   type: tip
-#   title: "xxx技巧"
-#   file: tips/002-xxx.md
-#   published: "2026-02-20"
-#   status: published
-#   tags: [tag1, tag2]
+  - id: tip-002
+    type: tip
+    title: "00碎片经验"
+    file: tips/000-碎片经验.md
+    published: "2026-02-23"
+    status: published
+    tags: [碎片经验, 零碎Tips, 经验积累]
