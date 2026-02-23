@@ -1,0 +1,17 @@
+# 内容注册表
+# 记录所有技巧、提示词、笔记的清单
+# Agent 通过此文件判断更新和获取内容列表
+
+version: "1.0"
+last_published: "2026-02-23"
+update_schedule: "周一、四"
+
+contents: []
+# 未来新增内容示例：
+# - id: tip-001
+#   type: tip
+#   title: "xxx技巧"
+#   file: tips/001-xxx.md
+#   published: "2026-02-20"
+#   status: published
+#   tags: [tag1, tag2]
