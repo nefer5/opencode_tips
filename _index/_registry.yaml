@@ -22,3 +22,11 @@ contents:
     published: "2026-02-23"
     status: published
     tags: [碎片经验, 零碎Tips, 经验积累]
+
+  - id: note-001
+    type: note
+    title: "大文件编辑安全协议（safe-fast-edit）"
+    file: notes/001-safe-fast-edit.md
+    published: "2026-02-23"
+    status: draft
+    tags: [workflow, editing, safe-fast-edit, tools, 批量编辑, 文件安全]
