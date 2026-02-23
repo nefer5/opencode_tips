@@ -6,12 +6,20 @@ version: "1.0"
 last_published: "2026-02-23"
 update_schedule: "周一、四"
 
-contents: []
+contents:
+  - id: tip-001
+    type: tip
+    title: "如何使用 System Registry 管理系统台账"
+    file: tips/001-system-registry-usage.md
+    published: "2026-02-23"
+    status: published
+    tags: [system-registry, 系统台账, 能力管理, opencode]
+
 # 未来新增内容示例：
-# - id: tip-001
+# - id: tip-002
 #   type: tip
 #   title: "xxx技巧"
-#   file: tips/001-xxx.md
+#   file: tips/002-xxx.md
 #   published: "2026-02-20"
 #   status: published
 #   tags: [tag1, tag2]
