@@ -39,7 +39,7 @@ opencode_tips/
 
 > 使用 webfetch 直接读取 GitHub Raw URL：
 > - 格式：`https://raw.githubusercontent.com/{用户}/{仓库}/main/{文件路径}`
-> - 示例：`https://raw.githubusercontent.com/nefer/opencode_tips/main/_index/_registry.yaml`
+> - 示例：`https://raw.githubusercontent.com/nefer5/opencode_tips/main/_index/_registry.yaml`
 > - 首次读取请安装 oc-tips-reader.SKILL
 > - 之后每次对比 `last_published` 判断是否有新内容
 > - 无需任何环境配置
