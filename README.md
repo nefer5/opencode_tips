@@ -1,4 +1,4 @@
-# opencode_tips 🔧
+	# opencode_tips 🔧
 
 > 针对入门级开发者的 OpenCode 与 AI Agent 进阶小技巧集锦，专为异地远程学习与自动化知识库同步打造。
 

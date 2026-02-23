@@ -101,11 +101,31 @@ tags: [workflow, editing, safe-fast-edit, tools, 批量编辑, 文件安全]
 
 ### 3.1 实施方式
 
-推荐通过 **SKILL 规范** + **Python 脚本** 实现：
+推荐通过打包成 **SKILL 规范** + **AGENTS.md规则约束**实现：
+
+- **AGENTS.md规则约束**: 推荐提示次词:
+
+```
+大文件编辑安全协议（safe-fast-edit）
+
+- 当满足任一条件时，禁止继续逐条 `edit`，必须切换 `safe-fast-edit` SKILL：
+
+  1) 同一文件 `edit` 连续失败 >= 2 次（如 line changed / text not found / 匹配歧义）
+
+  2) 目标文件 > 300 行 且本次修改点 >= 3 处
+
+- 切换后使用批量 `SEARCH/REPLACE` JSON 一次提交，执行相应脚本;
+
+- 每个 `search` 必须带上下文并在全文唯一命中（count==1）；多块禁止重叠。
+
+- 先 `--dry-run` 预检，通过后再正式写入；必要时加 `--backup`。
+
+- 失败时先 `read` 目标文件重新取锚点，禁止盲改与并发多次 edit。
+```
 
 - **SKILL 规范**：定义触发条件、使用流程、约束条件（AGENTS.md 或独立 SKILL 文件）
-- **Python 脚本**：实现核心逻辑（`smart_patch.py`）
-- **集成方式**：Agent 检测到触发条件时，自动调用脚本执行
+	- Python 脚本：实现核心逻辑（`smart_patch.py`）, 打包在SKILL包内
+- **集成方式**：Agent 检测到触发条件时，自动调用SKILL, 然后使用脚本执行
 
 ### 3.2 文件组织结构
 
@@ -116,7 +136,8 @@ opencode-project/
 │       └── safe-fast-edit/
 │           ├── SKILL.md           # 使用规范和触发条件
 │           └── scripts/
-│               └── smart_patch.py # 核心实现
+│           |   └── smart_patch.py # 核心实现
+|           └── examples/ edits.sample.json # 
 └── AGENTS.md                      # 可选：在手册中定义使用规则
 ```
 
