@@ -103,7 +103,7 @@ tags: [workflow, editing, safe-fast-edit, tools, 批量编辑, 文件安全]
 
 推荐通过打包成 **SKILL 规范** + **AGENTS.md规则约束**实现：
 
-- **AGENTS.md规则约束**: 推荐提示次词:
+- **AGENTS.md规则约束**: 推荐提示词:
 
 ```
 大文件编辑安全协议（safe-fast-edit）
@@ -137,7 +137,7 @@ opencode-project/
 │           ├── SKILL.md           # 使用规范和触发条件
 │           └── scripts/
 │           |   └── smart_patch.py # 核心实现
-|           └── examples/ edits.sample.json # 
+|           └── examples/ edits.sample.json # 替换内容存放点
 └── AGENTS.md                      # 可选：在手册中定义使用规则
 ```
 
