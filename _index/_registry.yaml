@@ -3,7 +3,7 @@
 # Agent 通过此文件判断更新和获取内容列表
 
 version: "1.0"
-last_published: "2026-02-23"
+last_published: "2026-02-25"
 update_schedule: "周一、四"
 
 contents:
@@ -19,7 +19,7 @@ contents:
     type: tip
     title: "00碎片经验"
     file: tips/000-碎片经验.md
-    published: "2026-02-23"
+    published: "2026-02-25"
     status: published
     tags: [碎片经验, 零碎Tips, 经验积累]
 
