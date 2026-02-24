@@ -19,7 +19,7 @@ opencode_tips/
 ├── tips/         # 各种实用技巧
 ├── prompts/      # 提示词模板
 ├── notes/        # 学习笔记
-└── _skill/       # Agent 读取规范（不用管）
+└── _skill/       # Agent 读取规范
 ```
 
 ---
@@ -40,7 +40,7 @@ opencode_tips/
 > 使用 webfetch 直接读取 GitHub Raw URL：
 > - 格式：`https://raw.githubusercontent.com/{用户}/{仓库}/main/{文件路径}`
 > - 示例：`https://raw.githubusercontent.com/nefer5/opencode_tips/main/_index/_registry.yaml`
-> - 首次读取请安装 oc-tips-reader.SKILL
+> - 首次读取请去_skill/ 目录下查找安装 oc-tips-reader.SKILL
 > - 之后每次对比 `last_published` 判断是否有新内容
 > - 无需任何环境配置
 
