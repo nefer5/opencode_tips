@@ -3,7 +3,7 @@
 # Agent 通过此文件判断更新和获取内容列表
 
 version: "1.0"
-last_published: "2026-02-25"
+last_published: "2026-02-27"
 update_schedule: "周一、四"
 
 contents:
@@ -30,3 +30,11 @@ contents:
     published: "2026-02-23"
     status: draft
     tags: [workflow, editing, safe-fast-edit, tools, 批量编辑, 文件安全]
+
+  - id: note-002
+    type: note
+    title: "OpenSpec 工作流完整指南：从想法到实现的标准化路径"
+    file: notes/002-openspec-workflow-guide.md
+    published: "2026-02-27"
+    status: draft
+    tags: [openspec, workflow, ulw, 项目管理, 结构化开发, 变更管理]
