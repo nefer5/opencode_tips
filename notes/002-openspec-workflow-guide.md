@@ -241,7 +241,7 @@ openspec init
 在执行开始前，加上 `ulw` 魔法提示词：
 
 ```
-ulw 帮我开发一个文件批量重命名 Skill，支持多种规则组合
+/opsx-propose ulw 帮我开发一个文件批量重命名 Skill，支持多种规则组合
 ```
 
 > **关键提示**：`ulw` 会激活 ultrawork-mode，最大化并行 agent 调用，显著缩短复杂任务的执行时间。对于 OpenSpec 工作流这种多步骤、需要并行探索的任务，强烈推荐使用。
