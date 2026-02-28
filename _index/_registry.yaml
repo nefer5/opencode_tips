@@ -3,7 +3,7 @@
 # Agent 通过此文件判断更新和获取内容列表
 
 version: "1.0"
-last_published: "2026-02-27"
+last_published: "2026-02-28"
 update_schedule: "周一、四"
 
 contents:
@@ -38,3 +38,10 @@ contents:
     published: "2026-02-27"
     status: draft
     tags: [openspec, workflow, ulw, 项目管理, 结构化开发, 变更管理]
+  - id: note-003
+    type: note
+    title: "Agent防误删围栏方案：三级防护机制"
+    file: notes/003-anti-delete-safety-fence.md
+    published: "2026-02-28"
+    status: draft
+    tags: [安全, 文件操作, 删除保护, 回收站, windows, agent规范]
